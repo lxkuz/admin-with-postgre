@@ -13,6 +13,15 @@ gem 'slim-rails', '2.1.5'
 gem 'haml', '4.0.5'
 gem 'simple_form', '~> 3.1.0.rc2'
 gem 'hirb-unicode', '0.0.5'
+gem 'active_link_to', '1.0.2'
+gem 'has_scope', '0.5.1'
+gem 'kaminari', '0.16.1'
+
+# Assets
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'font-awesome-sass', '4.2.2'
+gem 'autoprefixer-rails', '4.0.0.1'
+gem 'quiet_assets', '1.0.3'
 
 
 group :production do

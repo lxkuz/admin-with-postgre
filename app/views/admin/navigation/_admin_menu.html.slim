@@ -1,0 +1,15 @@
+ul#side-menu.nav
+  li.nav-header
+    = link_to root_path, class: 'logo' do
+      = image_tag 'admin/logo.png'
+      div.type = t('type')
+      div.region = t('region')
+  = menu_list_item(admin_dashboard_path) do
+    = link_to admin_dashboard_path do
+      i.fa.fa.fa-th-large
+      span.nav-label = t('admin.dashboard.index.title')
+  = menu_list_item admin_users_path do
+    = link_to admin_users_path do
+      i.fa.fa-university
+      span.nav-label = t('admin.sections.index.title')
+  
