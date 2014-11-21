@@ -13,7 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-
+//
+//= require_tree ../../../vendor/assets/javascripts/common
 //= require_tree ../../../vendor/assets/javascripts/admin
 //= require ./common/initializer
 //= require_tree ./common
