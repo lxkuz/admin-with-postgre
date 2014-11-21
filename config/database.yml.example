@@ -1,0 +1,19 @@
+common: &common
+  adapter: postgresql
+  encoding: unicode
+  min_messages: WARNING
+  pool: 5
+  username: username
+  password: password
+
+development:
+  <<: *common
+  database: admin_with_postgre_development
+
+test:
+  <<: *common
+  database: admin_with_postgre_test
+
+production:
+  <<: *common
+  database: admin_with_postgre_development
