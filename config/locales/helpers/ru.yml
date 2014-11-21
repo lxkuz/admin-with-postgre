@@ -45,3 +45,8 @@ ru:
       ru: Русский
       en: English
       empty: Выберите язык
+
+  messages:
+    chosen_placeholder: Выберите из списка
+    destroy_confirm: 'Вы уверены, что хотите удалить эту запись?'
+    not_found: Не найдено

@@ -1,0 +1,6 @@
+ru:
+  application:
+    type: Каркас приложения
+    region: Название региона
+    navigation:
+      root: Главная

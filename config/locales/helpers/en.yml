@@ -45,3 +45,8 @@ en:
       ru: Русский
       en: English
       empty: Choose language
+
+  messages:
+    chosen_placeholder: Select from the list
+    destroy_confirm: 'Are You sure?'
+    not_found: Not found

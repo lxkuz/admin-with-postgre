@@ -4,7 +4,7 @@ class Admin::UsersController < Admin::AdminController
 
   def index
     @collection = apply_scopes(User).page params[:page]
-    @breadcrumbs = [{ name: t('admin.breadcrumbs.root'), url: admin_dashboard_path }, { name: t('admin.users.index.title') }]
+    @breadcrumbs = [{ name: t('admin.navigation.root'), url: admin_dashboard_path }, { name: t('admin.users.index.title') }]
     respond_with @collection
   end
 
@@ -39,7 +39,7 @@ class Admin::UsersController < Admin::AdminController
   end
 
   def set_breadcrumbs
-    @breadcrumbs = [{ name: t('admin.breadcrumbs.root'), url: admin_dashboard_path }, { name: t('admin.users.index.title'), url: admin_users_path }, { name: t('.title') }]
+    @breadcrumbs = [{ name: t('admin.navigation.root'), url: admin_dashboard_path }, { name: t('admin.users.index.title'), url: admin_users_path }, { name: t('.title') }]
   end
 
   def resource_params

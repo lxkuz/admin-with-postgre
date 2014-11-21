@@ -1,0 +1,20 @@
+ru:
+  admin:
+    type: Каркас приложения
+    region: Название региона
+    navigation:
+      root: Главная
+    
+    dashboard:
+      index:
+        title: Панель управления
+
+    users:
+      index:
+        title: Пользователи
+      show:
+        title: Информация о пользователе
+      edit:
+        title: Редактирование пользователя
+      new:
+        title: Создание пользователя
