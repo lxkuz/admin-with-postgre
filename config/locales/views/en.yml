@@ -4,12 +4,3 @@ en:
     admin:
       navigation:
         root: Home
-  users:
-    index:
-      title: Users list
-    show:
-      title: View user
-    edit:
-      title: Edit user
-    new:
-      title: Create user
