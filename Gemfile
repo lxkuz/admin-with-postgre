@@ -23,6 +23,9 @@ gem 'font-awesome-sass', '4.2.2'
 gem 'autoprefixer-rails', '4.0.0.1'
 gem 'quiet_assets', '1.0.3'
 
+# Search
+gem 'elasticsearch-model', '0.1.6'
+gem 'elasticsearch-rails', '0.1.6'
 
 group :production do
   # gem 'unicorn', platforms: :ruby

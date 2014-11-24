@@ -1,6 +1,7 @@
 class Admin::UsersController < Admin::AdminController
   before_action :set_resource, only: [:edit, :update, :destroy]
   before_action :set_breadcrumbs, except: [:index, :destroy]
+  include Scopable
 
   def index
     @collection = apply_scopes(User).page params[:page]
