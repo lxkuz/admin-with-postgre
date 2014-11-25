@@ -7,3 +7,8 @@ en:
         email: Email
         password: Password
         password_confirmation: Password confirmation
+      settings:
+        site_name: Site name
+        site_title: Site title
+        contact_email: Contact email
+        logo: Logo

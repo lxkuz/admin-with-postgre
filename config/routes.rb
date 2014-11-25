@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
       resources :pictures, only: [:index, :create, :show, :destroy]
       resources :attachments, only: [:index, :create, :destroy]
+      resource :settings, except: [:new, :create, :destroy]
 
       resources :users
     end

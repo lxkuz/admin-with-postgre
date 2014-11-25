@@ -28,6 +28,11 @@ Dragonfly.app.configure do
     content.process!(:encode, 'png')
   end
 
+  processor :logo do |content|
+    content.process!(:convert, "-resize 'x50^' -gravity center")
+    content.process!(:encode, 'png')
+  end
+
 end
 
 # Logger

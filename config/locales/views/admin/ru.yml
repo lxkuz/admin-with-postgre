@@ -18,3 +18,12 @@ ru:
         title: Редактирование пользователя
       new:
         title: Создание пользователя
+    settings:
+      index:
+        title: Настройки
+      show:
+        title: Настройки
+      edit:
+        title: Настройки
+      new:
+        title: Настройки

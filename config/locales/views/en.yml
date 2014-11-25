@@ -1,6 +1,4 @@
 en:
   application:
-    site_name: Application skeleton
-    admin:
-      navigation:
-        root: Home
+    navigation:
+      root: Home
