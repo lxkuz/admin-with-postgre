@@ -89,18 +89,27 @@
 
     Для полей, которые необходимо локализовать указывать тип hstore
 
-    ```ruby
+```
+#!ruby
+
       create_table :posts do |t|
         t.hstore :title
         t.hstore :content
       end
-    ```
+
+```
+
 
     В модели для нужных аттрибутов указать
-    ```ruby
+
+```
+#!ruby
+
       class Post < ActiveRecord::Base
         multilang :title, :content
       end
-    ```
 
-     Более подробная информация здесь https://github.com/bithavoc/multilang-hstore
+```
+
+
+    Более подробная информация здесь https://github.com/bithavoc/multilang-hstore
