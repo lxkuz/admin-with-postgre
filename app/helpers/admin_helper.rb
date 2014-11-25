@@ -38,4 +38,19 @@ module AdminHelper
       concat I18n.t("helpers.sort_by.#{order}")
     end
   end
+
+  def locale_pickers
+    [locales_picker(:left, :ru, class: 'col-lg-6 col-md-12 col-sm-12 col-xs-12'), locales_picker(:right, :en,  class: 'col-lg-6 col-md-12 col-sm-12 col-xs-12')].join.html_safe
+  end
+
+  def locales_picker(type, selected, options = {})
+    locales_arr = []
+    locales_arr.push [I18n.t('helpers.locales.empty'), nil] if options[:include_blank]
+    I18n.available_locales.map do |locale|
+      locales_arr.push [I18n.t("helpers.locales.#{locale}"), locale]
+    end
+    content_tag :div, class: options[:class] do
+      concat select_tag type, options_for_select(locales_arr, selected: selected), class: "locale-selector #{type}", data: { locale_type: type }
+    end
+  end
 end

@@ -16,6 +16,8 @@ gem 'hirb-unicode', '0.0.5'
 gem 'active_link_to', '1.0.2'
 gem 'has_scope', '0.5.1'
 gem 'kaminari', '0.16.1'
+gem 'dragonfly', '1.0.7'
+gem 'rack-cache', require: 'rack/cache'
 
 # Assets
 gem 'bootstrap-sass', '~> 3.2.0'
@@ -26,6 +28,9 @@ gem 'quiet_assets', '1.0.3'
 # Search
 gem 'elasticsearch-model', '0.1.6'
 gem 'elasticsearch-rails', '0.1.6'
+
+# Translations
+gem 'multilang-hstore', '~> 1.0.0'
 
 group :production do
   # gem 'unicorn', platforms: :ruby
@@ -49,3 +54,4 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
+gem 'colorize'

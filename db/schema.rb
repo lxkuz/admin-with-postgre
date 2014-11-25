@@ -11,11 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141121090426) do
+ActiveRecord::Schema.define(version: 20141124125956) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "hstore"
+
+  create_table "attachments", force: true do |t|
+    t.string   "file_uid"
+    t.string   "file_name"
+    t.string   "target_type"
+    t.integer  "target_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pictures", force: true do |t|
+    t.string   "file_uid"
+    t.string   "file_name"
+    t.string   "target_type"
+    t.integer  "target_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

@@ -29,6 +29,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    addressable (2.3.6)
     arel (5.0.1.20140414130214)
     autoprefixer-rails (4.0.0.1)
       execjs
@@ -43,6 +44,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    colorize (0.7.3)
     devise (3.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -50,6 +52,10 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    dragonfly (1.0.7)
+      addressable (~> 2.3)
+      multi_json (~> 1.0)
+      rack
     elasticsearch (1.0.6)
       elasticsearch-api (= 1.0.6)
       elasticsearch-transport (= 1.0.6)
@@ -94,12 +100,17 @@ GEM
     mime-types (2.4.3)
     minitest (5.4.3)
     multi_json (1.10.1)
+    multilang-hstore (1.0.1)
+      activerecord (~> 4.0)
+      pg (~> 0.0)
     multipart-post (2.0.0)
     orm_adapter (0.5.0)
     pg (0.17.1)
     quiet_assets (1.0.3)
       railties (>= 3.1, < 5.0)
     rack (1.5.2)
+    rack-cache (1.2)
+      rack (>= 0.4)
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.1.6)
@@ -173,7 +184,9 @@ DEPENDENCIES
   autoprefixer-rails (= 4.0.0.1)
   bootstrap-sass (~> 3.2.0)
   coffee-rails (~> 4.0.0)
+  colorize
   devise (= 3.4.1)
+  dragonfly (= 1.0.7)
   elasticsearch-model (= 0.1.6)
   elasticsearch-rails (= 0.1.6)
   font-awesome-sass (= 4.2.2)
@@ -183,8 +196,10 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   kaminari (= 0.16.1)
+  multilang-hstore (~> 1.0.0)
   pg (= 0.17.1)
   quiet_assets (= 1.0.3)
+  rack-cache
   rails (= 4.1.6)
   responders (= 1.1.2)
   sass-rails (~> 4.0.3)
