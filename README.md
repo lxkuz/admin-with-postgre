@@ -7,7 +7,7 @@
 
   **System dependencies**
   
-    JDK (7 and abobe) or OpenJDK (6 and above)
+    JDK (7 and above) or OpenJDK (6 and above)
     Elasticsearch (1.3.4)*
     libcurl3 libcurl3-gnutls libcurl4-openssl-dev
 
