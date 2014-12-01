@@ -1,7 +1,7 @@
 # User
 unless User.where(email: 'admin@mystand.ru').any?
-  User.create!(email: 'admin@mystand.ru', password: 'beer4stepa')
-  puts "User successfully created".colorize(:green)
+  user = User.create!(email: 'admin@mystand.ru', password: '123456qwerty')
+  puts "User ".green + "#{user.email} #{user.password} " + "successfully created".green
 end
 
 if Settings.count.zero?
